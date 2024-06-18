@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>zomato_test</title>
+</head>
+<body>
+    <!--head section with logo and logins-->
+    <header>
+        <span class="logo-span">
+            <a href="./index.html" class="logo">e!</a>
+        </span>
+        <span class="login-signup">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="account">Create an account</a>
+        </span>
+    </header>
+    <main>
+
+        <!-- left section with filters (input | checkbox | radio) -->
+        <section>
+            <h1>Breakfast Places in Mumbai</h1>
+            <form id="filter" action="#" class="filter">
+                <h4 class="filter-heading">Filters</h4> 
+                <h5 class="select-location">Select Location</h5>
+
+                <!-- dropdown for selecting location -->
+                <select name="location-option" id="select-option">
+                    <option id="location" value="none" class="location-option">
+                        <p>Select Location</p>
+                    </option>
+                    <option value="mumbai" class="location-option">Mumbai</option>
+                    <option value="delhi" class="location-option">Delhi</option>
+                    <option value="chennai" class="location-option">Chennai</option>
+                </select>
+
+                <!-- checkbox for cuisines -->
+                <h5>Cuisine</h5>
+                <div class="cuisines">
+                    <input type="checkbox"/> <label for="cuisine-type">North Indian</label>
+                </div>
+                <div class="cuisines">
+                    <input type="checkbox"/> <label for="cuisine-type">South Indian</label>
+                </div>
+                <div class="cuisines">
+                    <input type="checkbox"/> <label for="cuisine-type">Chinese</label>
+                </div>   
+                <div class="cuisines">
+                    <input type="checkbox"/> <label for="cuisine-type">Italian</label>
+                </div>
+                <div class="cuisines">
+                    <input type="checkbox"/> <label for="cuisine-type">African</label>
+                </div>
+                <div class="cuisines">
+                    <input type="checkbox"/> <label for="cuisine-type">Mexico</label>
+                </div>
+
+                <!-- radio buttons for different costs per quantity -->
+                <h5 id="filter-cost">Cost For Two</h5>
+                <div class="items">
+                    <input type="radio" name="filter-cost" id="" value="" />
+                    <label for="lessThan500">Less than $50</label>
+                </div>
+                <div class="items">
+                    <input type="radio" name="filter-cost" id="" value="filter-cost" />
+                    <label for="500To1000">$500 to 100</label>
+                </div>
+                <div class="items">
+                    <input type="radio" name="filter-cost" id="" value="filter-cost" />
+                    <label for="1000To1500">$100 to 150</label>
+                </div>
+                <div class="items">
+                    <input type="radio" name="filter-cost" id="" value="filter-cost" />
+                    <label for="1500To2000">$150 to 200</label>
+                </div>
+                <div class="items">
+                    <input type="radio" name="filter-cost" id="" value="filter-cost" />
+                    <label for="greaterThan2000">$200 +</label>
+                </div>
+
+                <!--- Sorting depending on price levels -->
+                <h5 id="filter-sort">Sort</h5>
+                <div class="items">
+                    <input type="radio" name="filter-sort" value="lowToHigh">
+                    <label for="lowToHigh">Price Low to High</label>
+                </div>
+                <div class="items">
+                    <input type="radio" name="filter-sort" value="HighToLow">
+                    <label for="HighToLow">Price High to Low</label>
+                </div>
+                
+            </form>
+
+            <!--- articles with food description and price tags -->
+            <!--Big chill cakery Item-->
+            <article class="result-1">
+                <!--Div containing image, shop and address-->
+                <div>
+                    <div class="img-container1">
+                        <img class="img" src="./images/breakfast.jpg" alt="breakfast">
+                    </div>
+                    <div class="cakery-container">
+                        <div class="cakery-text">The Big Chill Cakery</div>
+                        <div class="location">FORT</div>
+                        <div class="address">Shop 1, Plot D, Samruddhi Complex, Chincholi</div>
+                    </div>
+                </div>
+                <hr>
+                <!---Div containing bakery and cost-->
+                <div>
+                    <div class="cuisine-bakery">
+                        <div class="bakery">CUISINES : Bakery</div>
+                        <div class="bakery">COST FOR TWO : $70</div>
+                    </div>
+                </div>
+            </article>
+
+            <!---The Bake Shop Item-->
+            <article class="result-2">
+             <!--Div containing image, shop and address-->
+                <div>
+                    <div class="img-container1">
+                        <img class="img" src="./images/breakfast.jpg" alt="breakfast">
+                    </div>
+                    <div class="cakery-container">
+                       <div class="cakery-text">The Big Chill Cakery</div>
+                       <div class="location">FORT</div>
+                       <div class="address">Shop 1, Plot D, Samruddhi Complex, Chincholi</div>
+                    </div>
+                </div>
+                <hr>
+                <!---Div containing bakery and cost-->
+                <div>
+                  <div class="cuisine-bakery">
+                     <div class="bakery">CUISINES : Bakery</div>
+                     <div class="bakery">COST FOR TWO : $60</div>
+                  </div>
+                </div>
+            </article>
+
+            <!-- pagination for navigating pages -->
+            <div class="pagination">
+                <a>&lt;&lt;</a>
+                <a>1</a>
+                <a>2</a>
+                <a>3</a>
+                <a>4</a>
+                <a>5</a>
+                <a>6</a>
+                <a>&gt;&gt;</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
